@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="./template-styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+        <nav class="nav">
+            <a href="../index.html">Home</a>
+        </nav>
+
+        <div class="banner">
+            <div id="bannerAd">
+                <a id="bannerLink" href="https://jschollitt.github.io/tetoifestival/" target="_blank">
+                    <header>
+                        <div class="image-zoom">
+                            <img class="image-large" src="./assets/haka.jpg" alt="Live Kapa Haka Performance" />
+                            <img class="image-large" src="./assets/wood_carver.jpg"
+                                alt="Wood carver at the New Zealand Māori Arts and Crafts Institute." />
+                        </div>
+                        <div class="centered">Witness Live Kapa Haka Performance</div>
+                        <div class="second-text">Experience Traditional Wood Carving</div>
+                        <div class="bottom-right"> Jennifer Chin ID:1575372</div>
+                    </header>
+                </a>
+            </div>
+        </div>
+
+        <main class="main">
+            <h1>Main content</h1>
+        </main>
+    
+        <div class="sidebar">
+            <aside id="sidebar">
+            <div id="scene1" class="scene">
+                <img id="img1" src="./assets/pool.avif" />
+                <div id="txt1">
+                    <div class="text">
+                    <div class="country">Asia</div>
+                    <div class="flightsFrom">flights from</div>
+                    <div class="price"><span class="dollarSign">$</span>599</div>
+                    <div class="economyOneWay"><span class="economy">economy </span>one way</div>
+                    </div>
+                </div>
+            </div>
+            <div id="scene2" class="scene">
+                <img id="img2" src="./assets/city.avif" />
+                <div id="txt2"><div class="country">Canada</div><div class="flightsFrom">flights from</div> $865 economy one way</div>
+            </div>
+             <div id="scene3" class="scene">
+                <div id="txt3">text 3</div>      
+            </div>
+        </aside>
+        </div>
+    </div>
+
+</body>
+<script>
+const scenes = [];
+
+window.addEventListener("DOMContentLoaded", () => {
+    scenes.push(document.querySelector("#scene1"));
+    scenes.push(document.querySelector("#scene2"));
+    scenes.push(document.querySelector("#scene3"));
+    animateFlipbook();
+});
+
+function showScene(sceneNumber) {
+    for (let i = 0; i < scenes.length; i++) {
+        // conditional operator
+        scenes[i].style.visibility = (i === sceneNumber) ? "visible" : "hidden";
+    }
+}
+
+function animateFlipbook() {
+    let sceneNumber = 0;
+    showScene(sceneNumber);
+    let timer = setInterval(run, 3000);
+
+    function run() {
+        sceneNumber++;
+        if (sceneNumber >= scenes.length) {
+            clearInterval(timer);
+            sceneNumber = 0;
+            return;
+        }
+        showScene(sceneNumber);
+    }
+}
+</script>
+
+</html>
