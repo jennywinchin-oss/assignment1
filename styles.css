@@ -364,6 +364,32 @@ header {
     line-height:0px;
 }
 
+.conditionsScene1And2{
+    position: relative;
+    left: 20px;
+    top: 740px;
+    color:aliceblue;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#condS1L1 {
+    left:70px;
+}
+
+#condS1L3 {
+    left:100px;
+}
+
+#condS2L1 {
+    left: 50px;
+    top: 760px;
+}
+#condS2L2 {
+    left: 50px;
+    top: 760px;
+}
+
 .line1And2 {
     font-family: "Garamond", Times, serif;
     font-size: 40px;
@@ -381,8 +407,9 @@ header {
 #line3 {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    left: 65px;
+    left: 60px;
     line-height: 30px;
+    font-size: 16px;
 }
 
 #scene3Bubble {
@@ -428,14 +455,41 @@ header {
     left: 178px;
     top: 10px;
     font-size: 15px;
+    background-color: #c7d4e6;
 }
 
 #idSidebarScene4 {
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
-    font-size: 15px;
+    font-size: 18px;
     position: relative;
-    left: -50px;
+    left: -70px;
+    top: 350px;
+}
+
+#airNZLogo {
+    font-family: "Garamond", Times, serif;
+    font-size: 20px;
+    position: relative;
+    top: -360px;
+    left: 125px;
+    font-style: italic;
+}
+
+#conditionsSidebarScene3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: -20px;
+    top: 315px;
+}
+
+#star {
+    font-size: 15px;
+    font-family: Verdana, Geneva, sans-serif;
+    position: relative;
+    left: 200px;
+    top: 290px;
 }
 
 
