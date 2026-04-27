@@ -52,6 +52,8 @@ body {
     margin-right: auto;
     object-fit: cover;
     width: 100%;
+    position: relative;
+    left: -400px;
     animation: up-down;
     animation-duration: 6s;
     animation-delay: 0s;
@@ -72,7 +74,7 @@ body {
         transform: translateY(-2070px)
     }
     100%{
-        transform: translateY(-2070px);
+        transform: translateY(-2900px);
     }
 }
 
@@ -129,20 +131,17 @@ header {
 
 @keyframes zoom-in-out{
     0% {
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.15); 
+        transform: scale(0.7);
     }
     100%{
-        transform: scale(1.05);
+        transform: scale(0.9);
     }
 }
 
 .centered {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 27%;
     transform: translate(-50%, -50%);
     opacity:0;
     font-family: Verdana;
@@ -161,7 +160,7 @@ header {
 .second-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 28%;
     transform: translate(-50%, -50%);
     opacity: 0;
     font-family: Verdana;
@@ -216,11 +215,11 @@ header {
 .bottom-right {
     position: absolute;
     top: 85%;
-    left: 93%;
+    left: 45%;
     transform: translate(-50%, -50%);
     opacity: 0;
     font-family: Verdana;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     color: #000000;
     animation: opacity-up;
@@ -384,6 +383,39 @@ header {
     position: relative;
     left: 65px;
     line-height: 30px;
+}
+
+#scene3Bubble {
+    display:block;
+    height:60px;
+    width: 60px;
+    line-height: 20px;
+    border-radius: 30px;
+    background-color: #451e7d;
+    background-image: linear-gradient(to bottom left, #240a48, #451e7d, white);
+    text-align: center;
+    position: relative;
+    top: 70px;
+    left: 130px;
+}
+
+#bookNow {
+    position: relative;
+    top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#scene4 {
+    visibility: visible;
+    animation-name: scene2;
+    animation-duration: 5s;
+}
+
+#adReplay {
+    position: absolute;
+    left: 170px;
+    top: 370px;
+    font-size: 60px;
 }
 
 
