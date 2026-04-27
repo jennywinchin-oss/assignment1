@@ -37,41 +37,53 @@
         </main>
     
         <div class="sidebar">
-            <aside id="sidebar">
-            <div id="scene1" class="scene">
-                <img id="img1" src="./assets/pool.avif" />
-                <div id="txt1">
-                    <div class="text">
-                    <div class="country">Asia</div>
-                    <div class="flightsFrom">flights from</div>
-                    <div class="price"><span class="dollarSign">$</span>599</div>
-                    <div class="economyOneWay"><span class="economy">economy </span>one way</div>
+            <a id="sidebarLink" href="https://www.airnewzealand.co.nz/usa-canada-asia-on-sale" target="blank">
+                <aside id="sidebar">
+                    <div id="scene1" class="scene">
+                        <img id="img1" src="./assets/pool.avif" />
+                        <div id="txt1">
+                            <div class="text">
+                                <div class="country">Asia</div>
+                                <div class="flightsFrom">flights from</div>
+                                <div class="price"><span class="dollarSign">$</span>599</div>
+                                <div class="economyOneWay"><span class="economy">economy </span>one way</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div id="scene2" class="scene">
-                <img id="img2" src="./assets/city.avif" />
-                <div id="txt2">
-                    <div class="text">
-                        <div class="country">Canada</div>
-                        <div class="flightsFrom">flights from</div>
-                        <div id="price2"><span id="dollarSign2">$</span>865</div>
-                        <div id="economyOneWay2"><span class="economy">economy </span>one way</div>
+                    <div id="scene2" class="scene">
+                        <img id="img2" src="./assets/city.avif" />
+                        <div id="txt2">
+                            <div class="text">
+                                <div class="country">Canada</div>
+                                <div class="flightsFrom">flights from</div>
+                                <div id="price2"><span id="dollarSign2">$</span>865</div>
+                                <div id="economyOneWay2"><span class="economy">economy </span>one way</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-             <div id="scene3" class="scene">
-                <div id="txt3">
-                    <div class="text">
-                        <div class="line1And2" id="line1">Asia, USA &</div>
-                        <div class="line1And2" id="line2">Canada on sale</div>
-                        <div id="line3"> Ends midnight 15 March 2026</div>
+                    <div id="scene3" class="scene">
+                        <div id="txt3">
+                            <div class="text">
+                                <div class="line1And2" id="line1">Asia, USA &</div>
+                                <div class="line1And2" id="line2">Canada on sale</div>
+                                <div id="line3"> Ends midnight 15 March 2026</div>
+                            </div>
+                            <div id="scene3Bubble">
+                                <div id="bookNow">BOOK NOW</div>
+                            </div> 
+                        </div>
+                    </div>   
+                    <div id="scene4">
+                        <div id="adReplay">
+                            <i class="fa-solid fa-circle-play" onclick="adReplay()"></i>
+                            <div id="idSidebarScene4">Jennifer Chin ID: 1575372</div>
+                        </div>
                     </div>
-                </div>      
-            </div>
-        </aside>
+                </aside>
+            </a>
+            <button id="replay">Replay Ad</button>
         </div>
-    </div>  
+    </div> 
 </body>
 <script>
 const scenes = [];
